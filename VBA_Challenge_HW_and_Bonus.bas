@@ -65,7 +65,8 @@ Sub Stocks()
                  opening_price = ws.Cells(i - number_entries, 3).Value
                  
                  'Conditional statement to handle Zero values for opening price
-                  If opening_price = 0 Or closing_price = 0 Then
+                  If opening_price = 0 Then
+                  'Or closing_price = 0 Then
                      percent_change = 0
                  
                   Else
